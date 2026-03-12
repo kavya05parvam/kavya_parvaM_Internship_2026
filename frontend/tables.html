@@ -1,0 +1,150 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th{
+            border: 1px solid black;
+        }
+    </style>
+ </head>
+ <body>
+    <!-- Table is representation of data in rows and column -->
+     <!-- tr represents number of rows -->
+     <!-- td/th represents the number of column -->
+      <!-- colspam for merging together -->
+       <!-- rowspan -->
+    <table>
+        <!-- type th*4 to get 4 <th> tags -->
+            <!-- td{Data 1$}*5 -->
+            <td>Data 11</td>
+            <td>Data 12</td>
+            <td>Data 13</td>
+            <td>Data 14</td>
+            <td>Data 15</td>
+
+            <!--  type- tr>td{Data 2$}*5 to get td tags 5 times-->
+            <tr>
+                <td>Data 21</td>
+                <td>Data 22</td>
+                <td>Data 23</td>
+                <td>Data 24</td>
+                <td>Data 25</td>
+            </tr>
+
+            <!-- IPL player list -->
+             <!-- To type 5 times of tr : (tr>(th*5))*5  -->
+             <table>
+                <tr>
+                    <th>Sl. no</th>
+                    <th>Player name</th>
+                    <th>Role</th>
+                    <th>Country & IPL team</th>
+                    <!-- <th>IPL team</th> -->
+                </tr>
+                <tr>
+                    
+                    <td>1</td>
+                    <td>Kohli</td>
+                    <td>Batsman</td>
+                    <td rowspan="2">India</td>
+                    <td>RCB</td>
+                  
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Rohith Sharma</td>
+                    <td>Batsam</td>
+                    <td>India</td>
+                    <td rowspan="2">MI</td>
+                </tr>
+                
+                <tr>
+                    <td>3</td>
+                    <td>Travis head</td>
+                    <td rowspan="2">Batsman</td>
+                    <td>Australia</td>
+                    <td>SRS</td>
+                    
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Jasprit bumrah</td>
+                    <td>Bowler</td>
+                    <td>India</td>
+                    <!-- <td>MI</td> -->
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Rajath patidar</td>
+                    <!-- <td>Batsman</td> -->
+                    <td>India</td>
+                    <td>RCB</td>
+                </tr>
+             </table>
+             <!--  -->
+
+             <table>
+                <tr>
+                    <h1>Cricket score board</h1>
+                    <th>Player name</th>
+                    <th>Runs</th>
+                    <th>Balls faced</th>
+                    <th>4s</th>
+                    <th>6s</th>
+                    <th>Strike rate</th>
+                </tr>
+                
+                <tr>
+                <td>Virat Kohli</td>
+                <td>58*</td>
+                <td>36</td>
+                <td>3</td>
+                <td>5</td>
+                <td>153</td>
+                </tr>
+
+                <tr>
+                <td>Ruthuraj</td>
+                <td>48*</td>
+                <td>26</td>
+                <td>2</td>
+                <td>4</td>
+                <td>150</td>
+                </tr>
+
+
+                <tr>
+                <td>Virat Kohli</td>
+                <td>58*</td>
+                <td>36</td>
+                <td>3</td>
+                <td>5</td>
+                <td>153</td>
+                </tr>
+
+                 <tr>
+                <td>Rojit sharma</td>
+                <td>58*</td>
+                <td>36</td>
+                <td>3</td>
+                <td>5</td>
+                <td>153</td>
+                </tr>
+
+
+             </table>
+           
+
+             
+
+     
+    </table>
+
+
+
+ </body>
+ </html>

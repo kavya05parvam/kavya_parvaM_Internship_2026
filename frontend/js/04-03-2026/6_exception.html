@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=a, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Exception Handling</h1>
+    <p>These mechanism help prevent program crashes</p>
+    <p>try, catch, finally</p>
+    <p>
+      finally - whenever exception occur or not this will execute by default
+      (here we can add closing resources - dbconnection, file close )
+    </p>
+
+    <script>
+      console.log(10 / 2);
+      console.log(2 / 10);
+      try {
+        const obj = {
+          name: "Annika",
+        };
+        console.log(obj.name1.age);
+      } catch (error) {
+        console.log(error);
+      } finally {
+        console.log("closing resources");
+      }
+
+      console.log("3");
+      console.log("4");
+    </script>
+  </body>
+</html>

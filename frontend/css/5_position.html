@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*        
+            position:static;
+            background-color: aqua;
+        }
+
+        #relative{
+             position: relative; 
+            left: 30px; 
+            top: 15px;
+            border-radius: 20px;
+            border: 2px solid black;
+            background-color: blue;
+        }
+        
+ 
+        #absolute{
+            position: absolute;
+            left: 20px;
+            top: 10px;   
+        } */
+        
+        .container{
+            position: relative;
+            background-color: rgb(125, 5, 5);
+            width: 400px;
+            height: 200px;
+        }
+
+        #child{
+            position: absolute;
+            top: 50px;
+            padding:0cqw;
+           
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>position property: </h1>
+    <p>it used to control the position of html</p>
+    <pre>
+        1.position: static - this is default position(cannot use left, right, top, bottom)
+        2.position: relative- this follows the original position absolute
+        3.position: absolute- this positions the element from the nearest ancestor
+        4.position: fixed- it will the html element
+        5.position. sticky- it will stick the element when we even scroll the page
+    </pre>
+
+    <div id="static">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, deserunt.</div>
+
+
+    <div id="relative">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, eveniet.</div>
+
+    <div class="container">
+        <div id="child1"></div>
+        Lorem ipsum dolor sit amet.
+    </div>
+
+    <div id="absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, culpa!</div>
+
+    
+</body>
+</html>

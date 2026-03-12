@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Variables & Functions</title>
+
+  <style>
+
+    /* 1. Global Variable */
+    :root {
+      --main-color: blue;
+      --box-size: 200px;
+    }
+
+    body {
+      font-family: Arial;
+      text-align: center;
+    }
+
+    /* 2. Using var() */
+    h1 {
+      color: var(--main-color);
+    }
+
+    /* 3. Box using variable */
+    .box {
+      background-color: var(--main-color);
+      width: var(--box-size);
+      height: var(--box-size);
+      margin: 20px auto;
+      color: white;
+      padding: 20px;
+    }
+
+    /* 4. calc() example */
+    .small-box {
+      background-color: black;
+      width: calc(var(--box-size) - 50px);
+      height: 50px;
+      margin: 10px auto;
+    }
+
+    /* 5. clamp() example */
+    p {
+      font-size: clamp(16px, 5vw, 30px);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>CSS Variables Example</h1>
+
+  <div class="box">
+    Main Box
+    <div class="small-box"></div>
+  </div>
+
+  <p>This text size changes using clamp()</p>
+
+</body>
+</html>
