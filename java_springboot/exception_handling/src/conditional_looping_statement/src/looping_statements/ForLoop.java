@@ -1,4 +1,4 @@
-package looping_statements;
+package conditional_looping_statement.src.looping_statements;
 
 public class ForLoop {
 	public static void main(String[] args) {
